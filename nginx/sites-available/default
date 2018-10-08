@@ -1,0 +1,982 @@
+New release '18.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Mon Oct  8 07:15:12 2018 from 10.0.2.2
+ ubuntu@Vgenee  ~  ls
+downloads
+ ubuntu@Vgenee  ~  j vg
+.
+ ubuntu@Vgenee  ~  cd /data
+ ubuntu@Vgenee  /data  ls
+gini-modules  index.html
+ ubuntu@Vgenee  /data  cd gini-modules
+ ubuntu@Vgenee  /data/gini-modules  ls
+17kong  gini  index.php  sample  test
+ ubuntu@Vgenee  /data/gini-modules  cd sample
+ ubuntu@Vgenee  /data/gini-modules/sample  ls
+cache  class  composer.json  composer.lock  gini.json  vendor  view  web
+ ubuntu@Vgenee  /data/gini-modules/sample  ll
+total 40K
+drwxrwxrwx  5 501 dialout 160 Oct  8 03:21 cache
+drwxr-xr-x  3 501 dialout  96 Oct  8 07:21 class
+-rwxrwxr-x  1 501 dialout 482 Oct  8 07:38 composer.json
+-rwxrwxr-x  1 501 dialout 30K Oct  8 03:20 composer.lock
+-rwxrwxr-x  1 501 dialout 113 Oct  8 03:09 gini.json
+drwxrwxrwx 11 501 dialout 352 Oct  8 03:20 vendor
+drwxr-xr-x  3 501 dialout  96 Oct  8 07:27 view
+drwxrwxrwx  4 501 dialout 128 Oct  8 07:42 web
+ ubuntu@Vgenee  /data/gini-modules/sample  cd view
+ ubuntu@Vgenee  /data/gini-modules/sample/view  ls
+hello.phtml
+ ubuntu@Vgenee  /data/gini-modules/sample/view  gini cache
+zsh: command not found: gini
+ ✘ ubuntu@Vgenee  /data/gini-modules/sample/view  docker exec -it gini-dev bash\
+> ;
+root@c9e6cad265f6:/data/gini-modules# ls
+17kong	gini  index.php  sample  test
+root@c9e6cad265f6:/data/gini-modules# cd sample/
+root@c9e6cad265f6:/data/gini-modules/sample# gini cache
+Checking module dependencies...
+   done.
+
+Checking composer dependencies...
+   done.
+
+Updating class cache...
+   done.
+
+Updating view cache...
+   done.
+
+Updating config cache...
+   done.
+
+root@c9e6cad265f6:/data/gini-modules/sample# ls
+cache  class  composer.json  composer.lock  gini.json  vendor  view  web
+root@c9e6cad265f6:/data/gini-modules/sample# cd ..
+root@c9e6cad265f6:/data/gini-modules# ls
+17kong	gini  index.php  sample  test
+root@c9e6cad265f6:/data/gini-modules# cd test/
+root@c9e6cad265f6:/data/gini-modules/test# ls
+cache  class  composer.json  composer.lock  gini.json  vendor  view  web
+root@c9e6cad265f6:/data/gini-modules/test# cd ..
+root@c9e6cad265f6:/data/gini-modules# exit
+exit
+ ubuntu@Vgenee  /data/gini-modules/sample/view  ls
+        root /data/gini-modules/test;
+hello.phtml
+ ubuntu@Vgenee  /data/gini-modules/sample/view  cd
+ ubuntu@Vgenee  ~  ls
+downloads
+        root /data/gini-modules/sample;
+ ubuntu@Vgenee  ~  cd /data
+ ubuntu@Vgenee  /data  ls
+gini-modules  index.html
+ ubuntu@Vgenee  /data  cd gini-modules
+ ubuntu@Vgenee  /data/gini-modules  ls
+17kong  gini  index.php  sample  test
+ ubuntu@Vgenee  /data/gini-modules  cd sample
+ ubuntu@Vgenee  /data/gini-modules/sample  ls
+cache  class  composer.json  composer.lock  gini.json  vendor  view  web
+ ubuntu@Vgenee  /data/gini-modules/sample  cd /etc/nginx
+ ubuntu@Vgenee  /etc/nginx  ls
+conf.d          koi-utf     nginx.conf    sites-available  uwsgi_params
+fastcgi.conf    koi-win     proxy_params  sites-enabled    win-utf
+fastcgi_params  mime.types  scgi_params   snippets
+ ubuntu@Vgenee  /etc/nginx  cd sites-enabled
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  ls
+default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  vim default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  vim default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo vim default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo service nginx restart
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  ls
+default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo vim default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo service nginx restart
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  ls
+default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  cd
+ ubuntu@Vgenee  ~  cd /data
+ ubuntu@Vgenee  /data  ls
+gini-modules  index.html
+ ubuntu@Vgenee  /data  cd gini-modules
+ ubuntu@Vgenee  /data/gini-modules  ls
+17kong  gini  index.php  sample  test
+ ubuntu@Vgenee  /data/gini-modules  cd gini
+ ubuntu@Vgenee  /data/gini-modules/gini   master ●  ls
+bin    data        gini.json  phpdoc.xml   raw                       view
+ci     docker      lib        phpspec.yml  README.md
+class  Dockerfile  LICENSE    phpunit.xml  sonar-project.properties
+ ubuntu@Vgenee  /data/gini-modules/gini   master ●  cd ..
+ ubuntu@Vgenee  /data/gini-modules  ls
+17kong  gini  index.php  sample  test
+ ubuntu@Vgenee  /data/gini-modules  cp gini gini-modules
+cp: omitting directory 'gini'
+ ✘ ubuntu@Vgenee  /data/gini-modules  cp -r gini gini-modules
+ ubuntu@Vgenee  /data/gini-modules  ls
+17kong  gini  gini-modules  index.php  sample  test
+ ubuntu@Vgenee  /data/gini-modules  cd test
+ ubuntu@Vgenee  /data/gini-modules/test  ls
+cache  class  composer.json  composer.lock  gini.json  vendor  view  web
+ ubuntu@Vgenee  /data/gini-modules/test  cd class
+ ubuntu@Vgenee  /data/gini-modules/test/class  ls
+Gini
+ ubuntu@Vgenee  /data/gini-modules/test/class  cd ..
+ ubuntu@Vgenee  /data/gini-modules/test  cd ..
+ ubuntu@Vgenee  /data/gini-modules  ls
+17kong  gini  gini-modules  index.php  sample  test
+ ubuntu@Vgenee  /data/gini-modules  cd sample
+ ubuntu@Vgenee  /data/gini-modules/sample  ls
+cache  class  composer.json  composer.lock  gini.json  vendor  view  web
+ ubuntu@Vgenee  /data/gini-modules/sample  ls
+cache  class  composer.json  composer.lock  gini.json  vendor  view  web
+ ubuntu@Vgenee  /data/gini-modules/sample  cd /etc/
+ ubuntu@Vgenee  /etc  ls
+acpi                    insserv.conf.d           python2.7
+adduser.conf            iproute2                 python3
+alternatives            iscsi                    python3.5
+apm                     issue                    rc0.d
+apparmor                issue.net                rc1.d
+apparmor.d              kbd                      rc2.d
+apport                  kernel                   rc3.d
+apt                     kernel-img.conf          rc4.d
+at.deny                 ldap                     rc5.d
+bash.bashrc             ld.so.cache              rc6.d
+bash_completion         ld.so.conf               rc.local
+bash_completion.d       ld.so.conf.d             rcS.d
+bindresvport.blacklist  legal                    request-key.conf
+binfmt.d                libaudit.conf            request-key.d
+byobu                   locale.alias             resolvconf
+ca-certificates         locale.gen               resolv.conf
+ca-certificates.conf    localtime                rmt
+calendar                logcheck                 rpc
+cloud                   login.defs               rsyslog.conf
+console-setup           logrotate.conf           rsyslog.d
+cron.d                  logrotate.d              screenrc
+cron.daily              lsb-release              securetty
+cron.hourly             ltrace.conf              security
+cron.monthly            lvm                      selinux
+crontab                 machine-id               services
+cron.weekly             magic                    sgml
+crypttab                magic.mime               shadow
+dbus-1                  mailcap                  shadow-
+debconf.conf            mailcap.order            shells
+debian_version          manpath.config           skel
+default                 mdadm                    sos.conf
+deluser.conf            mime.types               ssh
+depmod.d                mke2fs.conf              ssl
+dhcp                    modprobe.d               subgid
+dnsmasq.d               modules                  subgid-
+docker                  modules-load.d           subuid
+dpkg                    mtab                     subuid-
+ec2_version             nanorc                   sudoers
+environment             netconfig                sudoers.d
+fonts                   network                  sysctl.conf
+fstab                   NetworkManager           sysctl.d
+fuse.conf               networks                 systemd
+gai.conf                newt                     terminfo
+groff                   nginx                    timezone
+group                   nsswitch.conf            tmpfiles.d
+group-                  opt                      ucf.conf
+grub.d                  os-release               udev
+gshadow                 overlayroot.conf         ufw
+gshadow-                overlayroot.local.conf   updatedb.conf
+gss                     pam.conf                 update-manager
+hdparm.conf             pam.d                    update-motd.d
+host.conf               passwd                   update-notifier
+##
+# You should look at the following URL's in order to grasp a solid understanding
+# of Nginx configuration files in order to fully unleash the power of Nginx.
+# http://wiki.nginx.org/Pitfalls
+# http://wiki.nginx.org/QuickStart
+# http://wiki.nginx.org/Configuration
+#
+# Generally, you will want to move this file somewhere, and start with a clean
+# file but keep this around for reference. Or just disable in sites-enabled.
+#
+# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+##
+
+# Default server configuration
+#
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        # SSL configuration
+        #
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;
+        #
+/php
+hostname                passwd-                  vim
+        # See: https://bugs.debian.org/765782
+        #
+        # Self signed certs generated by the ssl-cert package
+        # Don't use them in a production server!
+        #
+        # include snippets/snakeoil.conf;
+
+        root /data/gini-modules/sample;
+
+        # Add index.php to the list if you are using PHP
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name _;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+        }
+
+        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        #
+        location ~ \.php$ {
+        #       include snippets/fastcgi-php.conf;
+/server
+        #location ~ /\.ht {
+        #       deny all;
+        #}
+}
+
+
+# Virtual Host configuration for example.com
+#
+# You can move that to a different file under sites-available/ and symlink that
+# to sites-enabled/ to enable it.
+#
+#server {
+#       listen 80;
+#       listen [::]:80;
+#
+#       server_name example.com;
+#
+#       root /var/www/example.com;
+#       index index.html;
+#
+#       location / {
+#               try_files $uri $uri/ =404;
+#       }
+#}
+search hit BOTTOM, continuing at TOP
+#
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        # SSL configuration
+        #
+        # listen 443 ssl default_server;
+        # listen [::]:443 ssl default_server;
+        #
+        # Note: You should disable gzip for SSL traffic.
+        # See: https://bugs.debian.org/773332
+        #
+        # Read up on ssl_ciphers to ensure a secure configuration.
+        # See: https://bugs.debian.org/765782
+        #
+        # Self signed certs generated by the ssl-cert package
+        # Don't use them in a production server!
+        #
+        # include snippets/snakeoil.conf;
+
+        root /data/gini-modules/sample;
+
+        # Add index.php to the list if you are using PHP
+/php
+
+        server_name _;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+        }
+
+        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+        #
+        location ~ \.php$ {
+        #       include snippets/fastcgi-php.conf;
+        #
+        #       # With php7.0-cgi alone:
+                fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+                fastcgi_pass 127.0.0.1:9000;
+                fastcgi_index  index.php;
+                fastcgi_param  SCRIPT_FILENAME  /data/gini-modules/sample$fastcgi_script_name;
+                include        fastcgi_params;
+        #       # With php7.0-fpm:
+        #       fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+        }
+/server
+        #location ~ /\.ht {
+        #       deny all;
+        #}
+}
+
+
+# Virtual Host configuration for example.com
+#
+# You can move that to a different file under sites-available/ and symlink that
+# to sites-enabled/ to enable it.
+#
+#server {
+#       listen 80;
+#       listen [::]:80;
+#
+#       server_name example.com;
+#
+#       root /var/www/example.com;
+#       index index.html;
+#
+#       location / {
+#               try_files $uri $uri/ =404;
+#       }
+#}
+search hit BOTTOM, continuing at TOP
+        location / {
+hosts                   perl                     vmware-tools
+hosts.allow             pm                       vtrgb
+map $request_uri $path_info {
+hosts.deny              polkit-1                 wgetrc
+idmapd.conf             pollinate                X11
+init                    popularity-contest.conf  xdg
+init.d                  ppp                      xml
+initramfs-tools         profile                  zsh
+inputrc                 profile.d                zsh_command_not_found
+insserv                 protocols
+insserv.conf            python
+ ubuntu@Vgenee  /etc  cd nginx
+ ubuntu@Vgenee  /etc/nginx  ls
+conf.d          koi-utf     nginx.conf    sites-available  uwsgi_params
+fastcgi.conf    koi-win     proxy_params  sites-enabled    win-utf
+fastcgi_params  mime.types  scgi_params   snippets
+ ubuntu@Vgenee  /etc/nginx  ls
+conf.d          koi-utf     nginx.conf    sites-available  uwsgi_params
+fastcgi.conf    koi-win     proxy_params  sites-enabled    win-utf
+fastcgi_params  mime.types  scgi_params   snippets
+ ubuntu@Vgenee  /etc/nginx  cd sites-available
+ ubuntu@Vgenee  /etc/nginx/sites-available  ls
+default
+ ubuntu@Vgenee  /etc/nginx/sites-available  vim default
+ ubuntu@Vgenee  /etc/nginx/sites-available  sudo vim default
+ ubuntu@Vgenee  /etc/nginx/sites-available  sudo service nginx restart
+ ubuntu@Vgenee  /etc/nginx/sites-available   sudo vim default
+ ubuntu@Vgenee  /etc/nginx/sites-available  sudo service nginx restart
+ ubuntu@Vgenee  /etc/nginx/sites-available  vim default
+ ubuntu@Vgenee  /etc/nginx/sites-available  tail -10 /var/log/nginx/error.log
+2018/10/08 08:10:11 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:12 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:12 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:12 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:15 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:18 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:12:59 [error] 5441#5441: *5 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:13:12 [error] 5441#5441: *5 directory index of "/data/gini-modules/sample/web/" is forbidden, client: 192.168.32.1, server: _, request: "GET /web/ HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:20:33 [error] 5772#5772: *1 directory index of "/data/gini-modules/sample/web/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:23:21 [error] 5806#5806: *2 connect() failed (113: No route to host) while connecting to upstream, client: 192.168.32.1, server: , request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+ ubuntu@Vgenee  /etc/nginx/sites-available  ping 172.17.42.1
+PING 172.17.42.1 (172.17.42.1) 56(84) bytes of data.
+From 172.17.0.1 icmp_seq=1 Destination Host Unreachable
+From 172.17.0.1 icmp_seq=2 Destination Host Unreachable
+From 172.17.0.1 icmp_seq=3 Destination Host Unreachable
+vFrom 172.17.0.1 icmp_seq=4 Destination Host Unreachable
+From 172.17.0.1 icmp_seq=5 Destination Host Unreachable
+From 172.17.0.1 icmp_seq=6 Destination Host Unreachable
+From 172.17.0.1 icmp_seq=7 Destination Host Unreachable
+From 172.17.0.1 icmp_seq=8 Destination Host Unreachable
+From 172.17.0.1 icmp_seq=9 Destination Host Unreachable
+^C
+--- 172.17.42.1 ping statistics ---
+10 packets transmitted, 0 received, +9 errors, 100% packet loss, time 9014ms
+pipe 3
+ ✘ ubuntu@Vgenee  /etc/nginx/sites-available  ls
+default
+ ubuntu@Vgenee  /etc/nginx/sites-available  docker
+
+Usage:	docker COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/home/ubuntu/.docker")
+  -D, --debug              Enable debug mode
+      --help               Print usage
+  -H, --host list          Daemon socket(s) to connect to (default [])
+  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/ubuntu/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/ubuntu/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/ubuntu/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  container   Manage containers
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  volume      Manage volumes
+
+Commands:
+  attach      Attach to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+ ubuntu@Vgenee  /etc/nginx/sites-available  ifconfig
+docker0   Link encap:Ethernet  HWaddr 02:42:aa:b5:0e:ed
+          inet addr:172.17.0.1  Bcast:0.0.0.0  Mask:255.255.0.0
+          inet6 addr: fe80::42:aaff:feb5:eed/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1462 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1563 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:398750 (398.7 KB)  TX bytes:10212912 (10.2 MB)
+
+enp0s3    Link encap:Ethernet  HWaddr 02:53:17:3c:de:80
+          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0
+          inet6 addr: fe80::53:17ff:fe3c:de80/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:22273 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9647 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:11620075 (11.6 MB)  TX bytes:902541 (902.5 KB)
+
+enp0s8    Link encap:Ethernet  HWaddr 08:00:27:94:ff:9a
+          inet addr:192.168.32.47  Bcast:192.168.32.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fe94:ff9a/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:7861 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:7631 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:3310668 (3.3 MB)  TX bytes:3359545 (3.3 MB)
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:329 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:329 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1
+          RX bytes:376184 (376.1 KB)  TX bytes:376184 (376.1 KB)
+
+veth786fe6e Link encap:Ethernet  HWaddr 82:07:ae:85:99:2d
+          inet6 addr: fe80::8007:aeff:fe85:992d/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:108 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:131 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:224392 (224.3 KB)  TX bytes:23286 (23.2 KB)
+
+ ubuntu@Vgenee  /etc/nginx/sites-available  cd etc
+cd: no such file or directory: etc
+ ✘ ubuntu@Vgenee  /etc/nginx/sites-available  cd /etc
+ ubuntu@Vgenee  /etc  ls
+acpi                    insserv.conf.d           python2.7
+adduser.conf            iproute2                 python3
+alternatives            iscsi                    python3.5
+apm                     issue                    rc0.d
+apparmor                issue.net                rc1.d
+apparmor.d              kbd                      rc2.d
+apport                  kernel                   rc3.d
+apt                     kernel-img.conf          rc4.d
+at.deny                 ldap                     rc5.d
+bash.bashrc             ld.so.cache              rc6.d
+bash_completion         ld.so.conf               rc.local
+bash_completion.d       ld.so.conf.d             rcS.d
+bindresvport.blacklist  legal                    request-key.conf
+binfmt.d                libaudit.conf            request-key.d
+byobu                   locale.alias             resolvconf
+ca-certificates         locale.gen               resolv.conf
+ca-certificates.conf    localtime                rmt
+calendar                logcheck                 rpc
+cloud                   login.defs               rsyslog.conf
+console-setup           logrotate.conf           rsyslog.d
+cron.d                  logrotate.d              screenrc
+cron.daily              lsb-release              securetty
+cron.hourly             ltrace.conf              security
+cron.monthly            lvm                      selinux
+crontab                 machine-id               services
+cron.weekly             magic                    sgml
+crypttab                magic.mime               shadow
+dbus-1                  mailcap                  shadow-
+debconf.conf            mailcap.order            shells
+debian_version          manpath.config           skel
+default                 mdadm                    sos.conf
+deluser.conf            mime.types               ssh
+depmod.d                mke2fs.conf              ssl
+dhcp                    modprobe.d               subgid
+dnsmasq.d               modules                  subgid-
+docker                  modules-load.d           subuid
+dpkg                    mtab                     subuid-
+ec2_version             nanorc                   sudoers
+environment             netconfig                sudoers.d
+fonts                   network                  sysctl.conf
+fstab                   NetworkManager           sysctl.d
+fuse.conf               networks                 systemd
+gai.conf                newt                     terminfo
+{
+"bip":"172.17.42.1/24"
+}
+~
+~
+groff                   nginx                    timezone
+{
+group                   nsswitch.conf            tmpfiles.d
+group-                  opt                      ucf.conf
+grub.d                  os-release               udev
+gshadow                 overlayroot.conf         ufw
+gshadow-                overlayroot.local.conf   updatedb.conf
+gss                     pam.conf                 update-manager
+hdparm.conf             pam.d                    update-motd.d
+host.conf               passwd                   update-notifier
+hostname                passwd-                  vim
+hosts                   perl                     vmware-tools
+hosts.allow             pm                       vtrgb
+hosts.deny              polkit-1                 wgetrc
+idmapd.conf             pollinate                X11
+init                    popularity-contest.conf  xdg
+init.d                  ppp                      xml
+initramfs-tools         profile                  zsh
+inputrc                 profile.d                zsh_command_not_found
+insserv                 protocols
+insserv.conf            python
+ ubuntu@Vgenee  /etc  cd docker
+ ubuntu@Vgenee  /etc/docker  ls
+key.json
+ ubuntu@Vgenee  /etc/docker  vim daemon.json
+ ubuntu@Vgenee  /etc/docker  sudo vim daemon.json
+ ubuntu@Vgenee  /etc/docker  sudo service docker restart
+ ubuntu@Vgenee  /etc/docker  ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 02:53:17:3c:de:80 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global enp0s3
+       valid_lft forever preferred_lft forever
+    inet6 fe80::53:17ff:fe3c:de80/64 scope link
+       valid_lft forever preferred_lft forever
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:94:ff:9a brd ff:ff:ff:ff:ff:ff
+    inet 192.168.32.47/24 brd 192.168.32.255 scope global enp0s8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fe94:ff9a/64 scope link
+       valid_lft forever preferred_lft forever
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default
+    link/ether 02:42:aa:b5:0e:ed brd ff:ff:ff:ff:ff:ff
+    inet 172.17.42.1/24 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:aaff:feb5:eed/64 scope link
+       valid_lft forever preferred_lft forever
+ ubuntu@Vgenee  /etc/docker  ifconfig
+docker0   Link encap:Ethernet  HWaddr 02:42:aa:b5:0e:ed
+          inet addr:172.17.42.1  Bcast:0.0.0.0  Mask:255.255.255.0
+          inet6 addr: fe80::42:aaff:feb5:eed/64 Scope:Link
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:1462 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1563 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:398750 (398.7 KB)  TX bytes:10212912 (10.2 MB)
+
+enp0s3    Link encap:Ethernet  HWaddr 02:53:17:3c:de:80
+          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0
+          inet6 addr: fe80::53:17ff:fe3c:de80/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:23058 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:10143 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:11676145 (11.6 MB)  TX bytes:950065 (950.0 KB)
+
+enp0s8    Link encap:Ethernet  HWaddr 08:00:27:94:ff:9a
+          inet addr:192.168.32.47  Bcast:192.168.32.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fe94:ff9a/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:7879 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:7645 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:3313919 (3.3 MB)  TX bytes:3362865 (3.3 MB)
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:333 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:333 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1
+          RX bytes:376384 (376.3 KB)  TX bytes:376384 (376.3 KB)
+
+ ubuntu@Vgenee  /etc/docker  ping 172.17.42.1
+PING 172.17.42.1 (172.17.42.1) 56(84) bytes of data.
+64 bytes from 172.17.42.1: icmp_seq=1 ttl=64 time=0.037 ms
+64 bytes from 172.17.42.1: icmp_seq=2 ttl=64 time=0.067 ms
+64 bytes from 172.17.42.1: icmp_seq=3 ttl=64 time=0.044 ms
+^C
+--- 172.17.42.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 0.037/0.049/0.067/0.014 ms
+ ubuntu@Vgenee  /etc/docker  ls
+daemon.json  key.json
+ ubuntu@Vgenee  /etc/docker  tail -10 /var/log/nginx/error.log
+2018/10/08 08:10:12 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:12 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:15 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:18 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:12:59 [error] 5441#5441: *5 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:13:12 [error] 5441#5441: *5 directory index of "/data/gini-modules/sample/web/" is forbidden, client: 192.168.32.1, server: _, request: "GET /web/ HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:20:33 [error] 5772#5772: *1 directory index of "/data/gini-modules/sample/web/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:23:21 [error] 5806#5806: *2 connect() failed (113: No route to host) while connecting to upstream, client: 192.168.32.1, server: , request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+2018/10/08 08:27:55 [error] 5806#5806: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+2018/10/08 08:27:58 [error] 5806#5806: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+ ubuntu@Vgenee  /etc/docker  tailf /var/log/nginx/error.log
+2018/10/08 08:10:12 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:12 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:15 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:10:18 [error] 5441#5441: *1 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:12:59 [error] 5441#5441: *5 directory index of "/data/gini-modules/sample/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:13:12 [error] 5441#5441: *5 directory index of "/data/gini-modules/sample/web/" is forbidden, client: 192.168.32.1, server: _, request: "GET /web/ HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:20:33 [error] 5772#5772: *1 directory index of "/data/gini-modules/sample/web/" is forbidden, client: 192.168.32.1, server: _, request: "GET / HTTP/1.1", host: "192.168.32.47"
+2018/10/08 08:23:21 [error] 5806#5806: *2 connect() failed (113: No route to host) while connecting to upstream, client: 192.168.32.1, server: , request: "GET /map $request_uri $path_info {
+index.php HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+2018/10/08 08:27:55 [error] 5806#5806: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+2018/10/08 08:27:58 [error] 5806#5806: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+2018/10/08 08:28:41 [error] 5806#5806: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+^C
+ ✘ ubuntu@Vgenee  /etc/docker  ls
+daemon.json  key.json
+ ubuntu@Vgenee  /etc/docker  cd
+ ubuntu@Vgenee  ~  j en__
+/etc/nginx/sites-enabled
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  ls
+default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  vim default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo vim default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo service nginx restart
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  vim default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo vim default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo service nginx restart
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  tailf /var/log/nginx/error.log
+2018/10/08 08:27:55 [error] 5806#5806: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+2018/10/08 08:27:58 [error] 5806#5806: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+2018/10/08 08:28:41 [error] 5806#5806: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+2018/10/08 08:29:56 [error] 6216#6216: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.17.42.1:9000", host: "192.168.32.47"
+2018/10/08 08:30:31 [error] 6258#6258: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "192.168.32.47"
+2018/10/08 08:30:33 [error] 6258#6258: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "192.168.32.47"
+2018/10/08 08:30:34 [error] 6258#6258: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "192.168.32.47"
+2018/10/08 08:30:34 [error] 6258#6258: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "192.168.32.47"
+2018/10/08 08:30:34 [error] 6258#6258: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "192.168.32.47"
+2018/10/08 08:30:34 [error] 6258#6258: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GETmap $request_uri $path_info {
+ / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "192.168.32.47"
+2018/10/08 08:30:46 [error] 6258#6258: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "192.168.32.47"
+2018/10/08 08:30:48 [error] 6258#6258: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 192.168.32.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "192.168.32.47"
+^C
+ ✘ ubuntu@Vgenee  /etc/nginx/sites-enabled  docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo service docker restart
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  docker start gini-dev
+gini-dev
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  cd ..
+ ubuntu@Vgenee  /etc/nginx  ls
+conf.d          koi-utf     nginx.conf    sites-available  uwsgi_params
+fastcgi.conf    koi-win     proxy_params  sites-enabled    win-utf
+fastcgi_params  mime.types  scgi_params   snippets
+ ubuntu@Vgenee  /etc/nginx  cd sites-enabled
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  ls
+default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  vim default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo vim default
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  sudo service nginx restart
+ ubuntu@Vgenee  /etc/nginx/sites-enabled  git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+ ✘ ubuntu@Vgenee  /etc/nginx/sites-enabled  exit
+Connection to 127.0.0.1 closed.
+ ✘  ~/VirtualMachine/Vgenee  docker snapshot save base
+
+Usage:	docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default
+                           "/Users/liuhongbo/.docker")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level
+                           ("debug"|"info"|"warn"|"error"|"fatal")
+                           (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default
+                           "/Users/liuhongbo/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default
+                           "/Users/liuhongbo/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default
+                           "/Users/liuhongbo/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  checkpoint  Manage checkpoints
+  config      Manage Docker configs
+  container   Manage containers
+  image       Manage images
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  deploy      Deploy a new stack or update an existing stack
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+ ~/VirtualMachine/Vgenee  vagrant snapshot base
+Usage: vagrant snapshot <subcommand> [<args>]
+
+Available subcommands:
+     delete
+     list
+     pop
+     push
+     restore
+     save
+
+For help on any individual subcommand run `vagrant snapshot <subcommand> -h`
+
+ ~/VirtualMachine/Vgenee  vagrant snapshot save base
+==> default: Snapshotting the machine as 'base'...
+==> default: Snapshot saved! You can restore the snapshot at any time by
+==> default: using `vagrant snapshot restore`. You can delete it using
+==> default: `vagrant snapshot delete`.
+ ~/VirtualMachine/Vgenee  vagrant ssh
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-137-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+map $request_uri $path_info {
+    ~^/(?P<foo>.*)$  $foo;
+}
+
+server {
+    listen 80;
+
+    root /data/gini-modules/sample/web/;
+    index index.php index.html index.htm;
+
+    location ~* \.php {
+        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+
+        fastcgi_pass 172.17.42.1:9000;
+        fastcgi_index index.php;
+
+        include fastcgi_params;
+
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+        fastcgi_param GINI_MODULE_BASE_PATH /data/gini-modules/;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param GINI_ENV development;
+
+    }
+"default" [readonly] 39L, 919C                                1,2           Top
+map $request_uri $path_info {
+    ~^/(?P<foo>.*)$  $foo;
+}
+
+server {
+    listen 80;
+
+    root /data/gini-modules/sample/web/;
+    index index.php index.html index.htm;
+
+    location ~* \.php {
+        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+
+        fastcgi_pass 172.17.42.1:9000;
+        fastcgi_index index.php;
+
+        include fastcgi_params;
+
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+        fastcgi_param GINI_MODULE_BASE_PATH /data/gini-modules/;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param GINI_ENV development;
+
+    }
+
+                                                              1,2           Top
+map $request_uri $path_info {
+    ~^/(?P<foo>.*)$  $foo;
+}
+
+server {
+    listen 80;
+
+    root /data/gini-modules/sample/web/;
+    index index.php index.html index.htm;
+
+    location ~* \.php {
+        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
+
+        fastcgi_pass 172.17.42.1:9000;
+        fastcgi_index index.php;
+
+        include fastcgi_params;
+
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+        fastcgi_param GINI_MODULE_BASE_PATH /data/gini-modules/;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param GINI_ENV development;
+
+    }
+
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|swf)$ {
+        expires max;
+        log_not_found off;
+        access_log off;
+    }
+
+    location ~* \.(eot|ttf|woff)$ {
+        add_header Access-Control-Allow-Origin *;
+    }
+
+    location ~ \/.+ {
+        try_files $request_uri $request_uri/ /index.php/$path_info;
+    }
+}
